@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Gas Tec</title>
+	<!-- Estilos de Bootstrap que es codigo responsive y visual ya escrito por otro. -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<!-- colores y estilos -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Tipografia -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|roboto:400,500,700" rel="stylesheet">
+	<!-- esto es para que el navegador se de cuenta cuando estamos en un celuar o tableta-->
+	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+</head>
+
+<body>
+<header>
+	<div class="container">
+		<div class="row top">
+			<!-- logo -->
+			<div class="col-md-4"><a href="#home" data-ancla="home" class="off"><img src="images/gtec_logo.png" alt class="logo"></a></div>
+			<div class="col-md-3"></div>
+			<div class="col-md-5">
+				<ul class='botonera'>
+					<li><a href="#nosotros" data-ancla="nosotros">Nosotros</a></li>
+					<li><a href="#servicios" data-ancla="servicios">Servicios</a></li>
+					<li><a href="#contacto" data-ancla="contacto">Contacto</a></li>
+
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="principal vertical-centered-text" id="home">
+	<div class="col-md-8 cta"><h1><strong>Gass Tec</strong></h1> 
+			<h4>Servicio de Reparación de computadoras en San José, Temperley.</h4>
+			<p>Especializacion en armado, reparacion y optimización de pc y Netbooks</p>
+<a  href="https://www.facebook.com/gasstec.pc/" class="btn btn-primary orange">Fanpage</a>
+
+
+		</div>
+</div>
+
+<div class="nosotros orange" id="nosotros">
+	<div class="container">
+		<h1>Nosotros</h1>
+		<p>Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!
+
+</p>
+	</div>
+</div>
+
+
+<div class="container servicios" id="servicios">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Nuestros Servicios</h1>
+		</div>
+	</div>
+	<div class="row images">
+		<div class="col-md-3">
+			<img src="images/003-ordenador-1.svg" alt="">
+			<h3>Mantenimiento</h3>
+			<p><li>Optimización</li><li>limpieza de virus</li><li>formateo de pc</li><li>Back up</li></center>
+		</div>
+		<div class="col-md-3">
+			<img src="images/005-instrumentos.svg" alt="">
+			<h3>Reparaciones</h3>
+			<p><li>Recuperaciones de datos perdidos/borrados (consultar)</li><li>redes inalambricas</li><li>armado de pc</li><li>etc.</li></p>
+		</div>
+		<div class="col-md-3">
+			<img src="images/004-ordenador.svg" alt="">
+			<h3>Instalaciones</h3>
+			<p><li>Sistemas Operativos</li><li>juegos</li><li>antivirus</li><li>Instalamos todo tipo de software.</li></p>
+		</div>
+		<div class="col-md-3">
+			<img src="images/002-servicio-al-cliente.svg" alt="">
+			<h3>Mejor tiempo</h3>
+			<p>Reparamos tu pc en 24 o 48 hs y bajo garantia.</p>
+		</div>
+	</div>
+	
+</div>
+
+<footer>
+	<div class="container" id="contacto">
+		<div class="row">
+			<div class="col-md-12">
+					<h1>CONTACTO</h1><br><br>
+
+			</div>
+		</div>
+		<div class="row social">
+		<div class="col-2"></div>	
+					<div class="col-2">
+						<a href="mailto:seccionricotera@gmail.com"><img src="images/003-email.svg" alt=""></a></div>
+
+					<div class="col-2">
+						<a href="https://www.facebook.com/gasstec.pc/"  target="_blank"><img src="images/001-facebook.svg" alt=""></a></div>
+
+
+					<div class="col-2">
+						<a target="_blank" href="https://api.whatsapp.com/send?phone=541126665491" ><img src="images/002-whatsapp.svg" alt=""></a></div>	
+
+						<div class="col-2">
+							<a href="https://www.facebook.com/messages/t/gasstec.pc"><img src="images/mensajero.svg" alt=""></a></div>
+	</div>
+</footer>
+<!-- Codigo que hace que las acciones de botones y cuestiones responsive funcionen-->
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<script>
+	
+$(document).ready(function() {    
+$('.top a').click(function(e){
+        e.preventDefault();
+        var offset = $($(this).attr('href')).offset().top;
+        $('html, body').animate({scrollTop:offset}, 600);
+        return false;
+    });
+
+});
+	
+</script>
+</body>
+</html>

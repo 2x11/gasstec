@@ -116,6 +116,11 @@ footer h1{
 	text-align: center;
 	font-weight: 100;
 }
+footer p{
+	text-align: center;
+	color: rgba(255,255,255,.7);
+	margin-top: 10%;
+}
 
 #home {
 	color: white;

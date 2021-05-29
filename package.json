@@ -1,0 +1,22 @@
+{
+  "name": "gass-tec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2x11/gasstec.git"
+  },
+  "author": "Daiana Abal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2x11/gasstec/issues"
+  },
+  "homepage": "https://github.com/2x11/gasstec#readme",
+  "dependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

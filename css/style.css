@@ -17,6 +17,7 @@ width: 132px;
 	color: #ced4da;
 
 }
+
 .botonera li a:hover{
 	color: black;
 	text-decoration: none;
@@ -64,6 +65,7 @@ h1{
 .orange{
 
 	background: #088A4B;
+	border-color: #088A4B;
 }
 
 .nosotros{
